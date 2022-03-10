@@ -4,7 +4,6 @@
     "description": "create bash scripts and run them",
     "main": "index.js",
     "scripts": {
-        "docs": "rm -rf docs && ./node_modules/.bin/jsdoc --configure ./jsdoc.json -d docs --verbose",
         "play": "node playground.js",
         "deploy": "git add . && git commit -m 'updated' && git push && npm version patch && npm publish"
     },
@@ -16,8 +15,8 @@
     "license": "MIT",
     "dependencies": {
         "child_process": "^1.0.2",
-        "clear_concise_creative": "^1.0.6",
-        "explain_me": "^1.1.6"
+        "clear_concise_creative": "^1.0.6"
     },
-    "homepage": "https://zen-out.github.io/packages/automate_me"
+    "homepage": "https://zen-out.github.io/packages/automate_me",
+    "repository": "https://github.com/zen-out/automate_me"
 }

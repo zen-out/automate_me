@@ -1,4 +1,4 @@
-const make_legit = require("./index.js")
+const make_legit = require("./dist/index.js")
 let shouldBeString = make_legit.format(3, "string")
 console.log("🚀 ~ file: playground.js ~ line 3 ~ shouldBeString", shouldBeString)
 let shouldBeString2 = make_legit.format({ "start": 2, "edit": 3, "end": 4 }, "string")

@@ -1,0 +1,3711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding favicon -->
+    
+    <link rel="icon" href="https://dl.dropbox.com/s/unb7kozlrbox72t/favicon.ico" />
+    
+
+    <!-- Adding meta -->
+    
+    
+    <meta name="author" content="Lesley Cheung" />
+    
+    
+
+    <!-- Adding external script-->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" ></script>
+    
+    
+
+    <!-- Adding external style-->
+    
+    
+    <link href="https://dl.dropbox.com/s/tljrmo925z4jgdi/professional.css" />
+    
+    
+
+    <!-- Adding scripts-->
+    
+
+    <!-- Adding style-->
+    
+
+    <!-- Adding overlay script-->
+    
+
+    <!-- Adding overlay style-->
+    
+
+
+    <title>
+      Global
+    </title>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/third-party/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/third-party/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-base.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-dark.css">
+    
+    <svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    style="display:none">
+    <defs>
+        <symbol id="copy-icon" viewbox="0 0 488.3 488.3">
+            <g>
+                <path
+                    d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z" />
+                <path
+                    d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z" />
+            </g>
+        </symbol>
+        <symbol id='search-icon' viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path
+                        d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="down-icon" viewBox="0 0 16 16">
+            <path 
+                fill-rule="evenodd" 
+                clip-rule="evenodd" 
+                d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"
+            >
+            </path>
+        </symbol>
+    </defs>
+</svg>
+  </head>
+
+  <body>
+
+    <nav class="navbar" id="navbar">
+      <h2><a href="index.html"><br/><a href='https://github.com/zen-out' target='_blank' style='margin: 1rem;'>zen-out</a><br/></a></h2><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="5745860" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#addDurations">addDurations</a></li><li class="accordion-list" id=""><a href="global.html#catchError">catchError</a></li><li class="accordion-list" id=""><a href="global.html#createDay">createDay</a></li><li class="accordion-list" id=""><a href="global.html#createFullDate">createFullDate</a></li><li class="accordion-list" id=""><a href="global.html#createHour">createHour</a></li><li class="accordion-list" id=""><a href="global.html#createMinute">createMinute</a></li><li class="accordion-list" id=""><a href="global.html#createMonth">createMonth</a></li><li class="accordion-list" id=""><a href="global.html#difference">difference</a></li><li class="accordion-list" id=""><a href="global.html#digitalToSeconds">digitalToSeconds</a></li><li class="accordion-list" id=""><a href="global.html#format">format</a></li><li class="accordion-list" id=""><a href="global.html#formatDateToPost">formatDateToPost</a></li><li class="accordion-list" id=""><a href="global.html#getDuration">getDuration</a></li><li class="accordion-list" id=""><a href="global.html#getReadableFormat">getReadableFormat</a></li><li class="accordion-list" id=""><a href="global.html#getType">getType</a></li><li class="accordion-list" id=""><a href="global.html#isBefore">isBefore</a></li><li class="accordion-list" id=""><a href="global.html#isBetween">isBetween</a></li><li class="accordion-list" id=""><a href="global.html#isDate">isDate</a></li></ul> </div><ul><li class="menu-li"><a href='http://zen-out.github.io/packages' class=' menu-link' id='' target='_blank'>zen-out packages</a></li><li class="menu-li"><a href='https://www.npmjs.com/package/when_you_free' class=' menu-link' id='' target='_blank'>see npm package</a></li></ul>
+      
+
+    </nav>
+    <div class="navbar-ham" id="navbar-ham">
+      <div>
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+      </div>
+    </div>
+
+    <div id="main" class="main-content">
+      
+      <h1 id='page-title' class="page-title">
+        Global
+      </h1>
+      
+
+      
+
+
+
+
+<section>
+
+
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+
+
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="addDurations">
+        <a href="#addDurations">#</a>
+        <span class="type-signature"></span>addDurations<span class="signature">(dateOne, dateTwo)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dateOne</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dateTwo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="catchError">
+        <a href="#catchError">#</a>
+        <span class="type-signature"></span>catchError<span class="signature">(getDate)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>getDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>catchError(getDate)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;catchError(getDate)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="createDay">
+        <a href="#createDay">#</a>
+        <span class="type-signature"></span>createDay<span class="signature">(year, month, day)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>year</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>month</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>day</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>createDay(year, month, day)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;createDay(year, month, day)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="createFullDate">
+        <a href="#createFullDate">#</a>
+        <span class="type-signature"></span>createFullDate<span class="signature">(year, month, day, hour, minute, second)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>year</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>month</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>day</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>hour</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>minute</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>second</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>createFullDate(year, month, day, hour, minute, second)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;createFullDate(year, month, day, hour, minute, second)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="createHour">
+        <a href="#createHour">#</a>
+        <span class="type-signature"></span>createHour<span class="signature">(hour, minute, second)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>hour</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>minute</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>second</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>createHour(hour, minute, second)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;createHour(hour, minute, second)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="createMinute">
+        <a href="#createMinute">#</a>
+        <span class="type-signature"></span>createMinute<span class="signature">(minute, second)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>minute</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>second</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>createMinute(minute, second)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;createMinute(minute, second)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="createMonth">
+        <a href="#createMonth">#</a>
+        <span class="type-signature"></span>createMonth<span class="signature">(year, month)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>year</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>month</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>createMonth(year, month)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;createMonth(year, month)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="difference">
+        <a href="#difference">#</a>
+        <span class="type-signature"></span>difference<span class="signature">(one, two, type)</span><span class="type-signature"> &rarr; {integer}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>one</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>two</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">integer</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>let dateHTML = {
+    one: "2020-03-01",
+    two: "2021-03-01",
+    two: "2022-03-01"
+}
+let dateObject = {
+    one: new Date(2010, 1, 1),
+    two: new Date(2011, 1, 1),
+    three: new Date(2020, 1, 1)
+}
+ let isTrue3 = when_you_free.difference(dateHTML["one"], dateHTML["two"], "minutes")
+let isTrue4 = when_you_free.difference(dateObject["one"], dateObject["two"], "months")</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;let dateHTML = {\n    one: \&quot;2020-03-01\&quot;,\n    two: \&quot;2021-03-01\&quot;,\n    two: \&quot;2022-03-01\&quot;\n}\nlet dateObject = {\n    one: new Date(2010, 1, 1),\n    two: new Date(2011, 1, 1),\n    three: new Date(2020, 1, 1)\n}\n let isTrue3 = when_you_free.difference(dateHTML[\&quot;one\&quot;], dateHTML[\&quot;two\&quot;], \&quot;minutes\&quot;)\nlet isTrue4 = when_you_free.difference(dateObject[\&quot;one\&quot;], dateObject[\&quot;two\&quot;], \&quot;months\&quot;)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="digitalToSeconds">
+        <a href="#digitalToSeconds">#</a>
+        <span class="type-signature"></span>digitalToSeconds<span class="signature">(string)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>string</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>let digitalOne = when_you_free.digitalToSeconds("11:22")</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;let digitalOne = when_you_free.digitalToSeconds(\&quot;11:22\&quot;)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="format">
+        <a href="#format">#</a>
+        <span class="type-signature"></span>format<span class="signature">(date, type)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>date</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>let formatted1 = when_you_free.format(dateTime["one"], "ll")
+let formatted2 = when_you_free.format(dateTime["one"], "LL")</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;let formatted1 = when_you_free.format(dateTime[\&quot;one\&quot;], \&quot;ll\&quot;)\nlet formatted2 = when_you_free.format(dateTime[\&quot;one\&quot;], \&quot;LL\&quot;)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="formatDateToPost">
+        <a href="#formatDateToPost">#</a>
+        <span class="type-signature"></span>formatDateToPost<span class="signature">(stringInput)</span><span class="type-signature"> &rarr; {date}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>stringInput</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">date</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>formatDateToPost(stringInput)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;formatDateToPost(stringInput)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getDuration">
+        <a href="#getDuration">#</a>
+        <span class="type-signature"></span>getDuration<span class="signature">(start, end, type)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>start</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>end</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>let getDuration = when_you_free.getDuration("2022-03-01T19:06:31.047Z", "2022-03-01T20:04:32.047Z", "seconds")</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;let getDuration = when_you_free.getDuration(\&quot;2022-03-01T19:06:31.047Z\&quot;, \&quot;2022-03-01T20:04:32.047Z\&quot;, \&quot;seconds\&quot;)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getReadableFormat">
+        <a href="#getReadableFormat">#</a>
+        <span class="type-signature"></span>getReadableFormat<span class="signature">(getDate, type)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>getDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>getReadableFormat("Dec 11, 2012", "from") in 2 months
+getReadableFormat("Dec 11, 2012", "to") 2 months ago</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;getReadableFormat(\&quot;Dec 11, 2012\&quot;, \&quot;from\&quot;) in 2 months\ngetReadableFormat(\&quot;Dec 11, 2012\&quot;, \&quot;to\&quot;) 2 months ago&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getType">
+        <a href="#getType">#</a>
+        <span class="type-signature"></span>getType<span class="signature">(date)</span><span class="type-signature"> &rarr; {object}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>date</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>moment</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>getType()</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;getType()&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isBefore">
+        <a href="#isBefore">#</a>
+        <span class="type-signature"></span>isBefore<span class="signature">(start, end)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>start</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>end</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>const when_you_free = require("when_you_free")
+letTrue = when_you_free.isBefore("Dec 11, 2012", "Dec 12, 2012")</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;const when_you_free = require(\&quot;when_you_free\&quot;)\nletTrue = when_you_free.isBefore(\&quot;Dec 11, 2012\&quot;, \&quot;Dec 12, 2012\&quot;)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isBetween">
+        <a href="#isBetween">#</a>
+        <span class="type-signature"></span>isBetween<span class="signature">(target, start, end)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>start</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>end</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>let dateHTML = {
+    one: "2020-03-01",
+    two: "2021-03-01",
+    two: "2022-03-01"
+}
+
+let dateString = {
+    one: "Dec 11, 2012",
+    two: "Dec 12, 2013",
+    three: "Dec 13, 2014"
+}
+let isTrue3 = when_you_free.isBetween(dateHTML["one"], dateHTML["two"], dateHTML["three"])
+let isTrue = when_you_free.isBetween(dateString["one"], dateString["two"], dateString["three"])</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;let dateHTML = {\n    one: \&quot;2020-03-01\&quot;,\n    two: \&quot;2021-03-01\&quot;,\n    two: \&quot;2022-03-01\&quot;\n}\n\nlet dateString = {\n    one: \&quot;Dec 11, 2012\&quot;,\n    two: \&quot;Dec 12, 2013\&quot;,\n    three: \&quot;Dec 13, 2014\&quot;\n}\nlet isTrue3 = when_you_free.isBetween(dateHTML[\&quot;one\&quot;], dateHTML[\&quot;two\&quot;], dateHTML[\&quot;three\&quot;])\nlet isTrue = when_you_free.isBetween(dateString[\&quot;one\&quot;], dateString[\&quot;two\&quot;], dateString[\&quot;three\&quot;])&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isDate">
+        <a href="#isDate">#</a>
+        <span class="type-signature"></span>isDate<span class="signature">(date)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>date</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>isDate(date)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;isDate(date)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/when_you_free/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    </div>
+
+    <footer class="footer" id="footer">
+      
+    </footer>
+
+    <script src="scripts/third-party/prettify.js"></script>
+    <script src="scripts/third-party/lang-css.js"></script>
+    <script type="text/javascript" src="scripts/misc.js"></script>
+
+    <script>prettyPrint();</script>
+    <script src="scripts/linenumber.js"></script>
+    <script src="scripts/fix-code-block.js"></script>
+    <script src="scripts/fix-navbar.js"></script>
+    
+      <script src="scripts/search.js"></script>
+      <script src="scripts/third-party/fuse.js"></script>
+      <script>
+        var list = [{"title":"addDurations","link":"<a href=\"global.html#addDurations\">addDurations</a>"},{"title":"catchError","link":"<a href=\"global.html#catchError\">catchError</a>"},{"title":"createDay","link":"<a href=\"global.html#createDay\">createDay</a>"},{"title":"createFullDate","link":"<a href=\"global.html#createFullDate\">createFullDate</a>"},{"title":"createHour","link":"<a href=\"global.html#createHour\">createHour</a>"},{"title":"createMinute","link":"<a href=\"global.html#createMinute\">createMinute</a>"},{"title":"createMonth","link":"<a href=\"global.html#createMonth\">createMonth</a>"},{"title":"difference","link":"<a href=\"global.html#difference\">difference</a>"},{"title":"digitalToSeconds","link":"<a href=\"global.html#digitalToSeconds\">digitalToSeconds</a>"},{"title":"format","link":"<a href=\"global.html#format\">format</a>"},{"title":"formatDateToPost","link":"<a href=\"global.html#formatDateToPost\">formatDateToPost</a>"},{"title":"getDuration","link":"<a href=\"global.html#getDuration\">getDuration</a>"},{"title":"getReadableFormat","link":"<a href=\"global.html#getReadableFormat\">getReadableFormat</a>"},{"title":"getType","link":"<a href=\"global.html#getType\">getType</a>"},{"title":"isBefore","link":"<a href=\"global.html#isBefore\">isBefore</a>"},{"title":"isBetween","link":"<a href=\"global.html#isBetween\">isBetween</a>"},{"title":"isDate","link":"<a href=\"global.html#isDate\">isDate</a>"}];
+        var options = 
+          setupSearch(list, options)
+      </script>
+    
+
+    
+
+    
+
+    
+
+
+  </body>
+
+</html>

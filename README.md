@@ -1,16 +1,13 @@
 # automate_me
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![NPM Downloads](https://img.shields.io/npm/dw/automate_me)## Instructions: 
+```npm install automate_me ``` 
+ ``` const automate_me =  require('automate_me')```
 
-quick way to create and run shell scripts 
-const automate_me = require("automate_me")
+## If utilizing in html...: 
+```<script src="https://cdn.jsdelivr.net/npm/automate_me/dist/index.js"></script> ``` 
+ ``` const output =  automate_me.method(parameter)```
 
-    // creates a file called hello.sh in your root folder and makes it executable
-automate_me.createFile("hello")
-
-// runs your shell script
-automate_me.runFile("hello")
-
-// just runs command
-automate_me.runCommand("echo 'hello'")[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)![NPM Downloads](https://img.shields.io/npm/dw/automate_me)
 ## Functions
 
 <dl>
@@ -32,9 +29,9 @@ Will run .sh file
 **Date**: 2022-03-06  
 **Author**: zen-out  
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>any</code> | 
+| Param    | Type             |
+|----------|------------------|
+| fileName | <code>any</code> |
 
 **Example**  
 ```js
@@ -47,9 +44,9 @@ runFile("script")
 **Date**: 2022-03-06  
 **Author**: zen-out  
 
-| Param | Type |
-| --- | --- |
-| command | <code>any</code> | 
+| Param   | Type             |
+|---------|------------------|
+| command | <code>any</code> |
 
 **Example**  
 ```js
@@ -62,9 +59,9 @@ runCommand("echo hello")
 **Date**: 2022-03-06  
 **Author**: zen-out  
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>any</code> | 
+| Param    | Type             |
+|----------|------------------|
+| fileName | <code>any</code> |
 
 **Example**  
 ```js

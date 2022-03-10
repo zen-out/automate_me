@@ -1,8 +1,6 @@
 const { exec } = require("child_process")
 const ccc = require("clear_concise_creative")
 
-
-
 /**
  * @description 
  * Will run .sh file 

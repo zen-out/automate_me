@@ -1,4 +1,4 @@
-const { format, getType, clean, trimArr, formatDate, formatNumber, formatArray, formatObject, formatString, formatBoolean, trimObj } = require("../module.js")
+const { format, getType, clean, trimArr, formatDate, formatNumber, formatArray, formatObject, formatString, formatBoolean, trimObj } = require("../dist/index.js")
 
 const { ISTYPEOF, HAS } = require("node_basetest")
 describe("get type", () => {

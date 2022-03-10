@@ -1,6 +1,6 @@
 const { ISTYPEOF, HAS } = require("node_basetest")
-const make_legit = require("../index.js")
-describe("final test", () => {
+const make_legit = require("../dist/index.js")
+describe("get type", () => {
     it("should run these values", () => {
         let shouldBeString = make_legit.format(3, "string")
         console.log("🚀 ~ file: playground.js ~ line 3 ~ shouldBeString", shouldBeString)
