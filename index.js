@@ -40,8 +40,7 @@ function runCommand(command) {
  * @returns {any}
  */
 function createFile(fileName) {
-    let getTemplate = ccc.readFile("./create.sh")
-    let writeTemplate = ccc.writeFile(`./${fileName}.sh`, getTemplate)
+    ccc.writeFile(`./${fileName}.sh`, "#!/bin/bash \necho 'hello'")
     exec(`chmod u+x ${fileName}.sh`, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
