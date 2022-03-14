@@ -1,6 +1,10 @@
 # automate_me
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![NPM Downloads](https://img.shields.io/npm/dw/automate_me)## Instructions: 
+![NPM Downloads](https://img.shields.io/npm/dw/automate_me)
+
+[![here](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/automate_me.png)](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/automate_me.p
+
+## Instructions: 
 ```npm install automate_me ``` 
  ``` const automate_me =  require('automate_me')```
 
