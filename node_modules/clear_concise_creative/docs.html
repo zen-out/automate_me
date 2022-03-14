@@ -1,0 +1,2493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding favicon -->
+    
+    <link rel="icon" href="https://dl.dropbox.com/s/unb7kozlrbox72t/favicon.ico" />
+    
+
+    <!-- Adding meta -->
+    
+    
+    <meta name="author" content="Lesley Cheung" />
+    
+    
+
+    <!-- Adding external script-->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" ></script>
+    
+    
+
+    <!-- Adding external style-->
+    
+    
+    <link href="https://dl.dropbox.com/s/tljrmo925z4jgdi/professional.css" />
+    
+    
+
+    <!-- Adding scripts-->
+    
+
+    <!-- Adding style-->
+    
+
+    <!-- Adding overlay script-->
+    
+
+    <!-- Adding overlay style-->
+    
+
+
+    <title>
+      Global
+    </title>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/third-party/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/third-party/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-base.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-dark.css">
+    
+    <svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    style="display:none">
+    <defs>
+        <symbol id="copy-icon" viewbox="0 0 488.3 488.3">
+            <g>
+                <path
+                    d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z" />
+                <path
+                    d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z" />
+            </g>
+        </symbol>
+        <symbol id='search-icon' viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path
+                        d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="down-icon" viewBox="0 0 16 16">
+            <path 
+                fill-rule="evenodd" 
+                clip-rule="evenodd" 
+                d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"
+            >
+            </path>
+        </symbol>
+    </defs>
+</svg>
+  </head>
+
+  <body>
+
+    <nav class="navbar" id="navbar">
+      <h2><a href="index.html"><br/><a href='https://github.com/zen-out' target='_blank' style='margin: 1rem;'>zen-out</a><br/></a></h2><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="8491091" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#addToNestedJSON">addToNestedJSON</a></li><li class="accordion-list" id=""><a href="global.html#appendFile">appendFile</a></li><li class="accordion-list" id=""><a href="global.html#appendToJSON">appendToJSON</a></li><li class="accordion-list" id=""><a href="global.html#copy">copy</a></li><li class="accordion-list" id=""><a href="global.html#deletePath">deletePath</a></li><li class="accordion-list" id=""><a href="global.html#getDirNames">getDirNames</a></li><li class="accordion-list" id=""><a href="global.html#getJSONObject">getJSONObject</a></li><li class="accordion-list" id=""><a href="global.html#mergeJSONObject">mergeJSONObject</a></li><li class="accordion-list" id=""><a href="global.html#readJSON">readJSON</a></li><li class="accordion-list" id=""><a href="global.html#replaceJSON">replaceJSON</a></li><li class="accordion-list" id=""><a href="global.html#writeFile">writeFile</a></li><li class="accordion-list" id=""><a href="global.html#writeJSON">writeJSON</a></li></ul> </div><ul><li class="menu-li"><a href='https://www.npmjs.com/package/clear_concise_creative' class=' menu-link' id='' target='_blank'>see npm package</a></li></ul>
+      
+
+    </nav>
+    <div class="navbar-ham" id="navbar-ham">
+      <div>
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+      </div>
+    </div>
+
+    <div id="main" class="main-content">
+      
+      <h1 id='page-title' class="page-title">
+        Global
+      </h1>
+      
+
+      
+
+
+
+
+<section>
+
+
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+
+
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="addToNestedJSON">
+        <a href="#addToNestedJSON">#</a>
+        <span class="type-signature"></span>addToNestedJSON<span class="signature">(filePath, arrDir, addObj)</span><span class="type-signature"></span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>filePath</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>arrDir</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>addObj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>ccc.addToNestedJSON("../sample.json", ["opts", "theme_opts", "menu"], {
+    "title": "visual instructions",
+    "link": "hi",
+    "target": "_blank"
+})</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;ccc.addToNestedJSON(\&quot;../sample.json\&quot;, [\&quot;opts\&quot;, \&quot;theme_opts\&quot;, \&quot;menu\&quot;], {\n    \&quot;title\&quot;: \&quot;visual instructions\&quot;,\n    \&quot;link\&quot;: \&quot;hi\&quot;,\n    \&quot;target\&quot;: \&quot;_blank\&quot;\n})&quot;, "js_external": "https://cdn.jsdelivr.net/npm/clear_concise_creative/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="appendFile">
+        <a href="#appendFile">#</a>
+        <span class="type-signature"></span>appendFile<span class="signature">(type, "string")</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <ol>
+<li>Formats data</li>
+<li>Appends to file</li>
+</ol>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>"string"</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>ccc.appendFile("./readMe.txt", { yo: "whatsup" })</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;ccc.appendFile(\&quot;./readMe.txt\&quot;, { yo: \&quot;whatsup\&quot; })&quot;, "js_external": "https://cdn.jsdelivr.net/npm/clear_concise_creative/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="appendToJSON">
+        <a href="#appendToJSON">#</a>
+        <span class="type-signature"></span>appendToJSON<span class="signature">("1:30PM")</span><span class="type-signature"></span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <ol>
+<li>Grabs JSON from json file</li>
+<li>If the key does not exist, then it will create a new key and assign the object</li>
+<li>If the key does exist, and it is not an array</li>
+<li>It will create an array and it will push the object into the array</li>
+</ol>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>"1:30PM"</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>ccc.appendToJSON("./data/appendToMe.json", "test", { id: "lesley" })</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;ccc.appendToJSON(\&quot;./data/appendToMe.json\&quot;, \&quot;test\&quot;, { id: \&quot;lesley\&quot; })&quot;, "js_external": "https://cdn.jsdelivr.net/npm/clear_concise_creative/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="copy">
+        <a href="#copy">#</a>
+        <span class="type-signature"></span>copy<span class="signature">(toCopy, copyTo)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>toCopy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>copyTo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>ccc.copy("./src/**.js", "./dist") 
+ccc.copy("./src/ ** / *", "dist", true)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;ccc.copy(\&quot;./src/**.js\&quot;, \&quot;./dist\&quot;) \nccc.copy(\&quot;./src/ ** / *\&quot;, \&quot;dist\&quot;, true)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/clear_concise_creative/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deletePath">
+        <a href="#deletePath">#</a>
+        <span class="type-signature"></span>deletePath<span class="signature">(path)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>ccc.deletePath(&quot;./test/deleteThis2&quot;)
+ccc.deletePath(&quot;./test/deleteThis2/delete.js&quot;)</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>path</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getDirNames">
+        <a href="#getDirNames">#</a>
+        <span class="type-signature"></span>getDirNames<span class="signature">(folder, ext)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>only return file names that include the extension</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>folder</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ext</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>let dirNames = ccc.getDirNames("./src", ".js")
+console.log(dirNames)
+let jsOnly = getDirNames("./", ".html")
+console.log("🚀 ~ file: readWrite.js ~ line 33 ~ jsOnly", jsOnly)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;let dirNames = ccc.getDirNames(\&quot;./src\&quot;, \&quot;.js\&quot;)\nconsole.log(dirNames)\nlet jsOnly = getDirNames(\&quot;./\&quot;, \&quot;.html\&quot;)\nconsole.log(\&quot;🚀 ~ file: readWrite.js ~ line 33 ~ jsOnly\&quot;, jsOnly)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/clear_concise_creative/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getJSONObject">
+        <a href="#getJSONObject">#</a>
+        <span class="type-signature"></span>getJSONObject<span class="signature">(filePath, arrDir)</span><span class="type-signature"> &rarr; {object}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>filePath</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>arrDir</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>JSON object</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>let scripts = ccc.getJSONObject("../package.json", ["scripts"])</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;let scripts = ccc.getJSONObject(\&quot;../package.json\&quot;, [\&quot;scripts\&quot;])&quot;, "js_external": "https://cdn.jsdelivr.net/npm/clear_concise_creative/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="mergeJSONObject">
+        <a href="#mergeJSONObject">#</a>
+        <span class="type-signature"></span>mergeJSONObject<span class="signature">(filePath, arrDir, updateObj)</span><span class="type-signature"></span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>filePath</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>arrDir</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>updateObj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>let addedCommands = ccc.mergeJSONObject("../package.json", ["scripts"], {
+    "play": "node playground.js",
+    "deploy": "git add . &amp;&amp; git commit -m 'updated' &amp;&amp; git push &amp;&amp; npm version patch &amp;&amp; npm publish",
+})</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;let addedCommands = ccc.mergeJSONObject(\&quot;../package.json\&quot;, [\&quot;scripts\&quot;], {\n    \&quot;play\&quot;: \&quot;node playground.js\&quot;,\n    \&quot;deploy\&quot;: \&quot;git add . && git commit -m &apos;updated&apos; && git push && npm version patch && npm publish\&quot;,\n})&quot;, "js_external": "https://cdn.jsdelivr.net/npm/clear_concise_creative/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="readJSON">
+        <a href="#readJSON">#</a>
+        <span class="type-signature"></span>readJSON<span class="signature">(filePath)</span><span class="type-signature"> &rarr; {object}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>let getJSON = ccc.readJSON(&quot;./db.json&quot;)</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>filePath</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="replaceJSON">
+        <a href="#replaceJSON">#</a>
+        <span class="type-signature"></span>replaceJSON<span class="signature">(filePath, filePath)</span><span class="type-signature"></span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <ol>
+<li>Reads from json file</li>
+<li>Replaces object depeneding on array passed in</li>
+</ol>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>filePath</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>filePath</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>let objectDir = ["opts", "theme_opts", "codepen"]
+ccc.replaceJSON("./data/appendToMe.json", objectDir, { "sexylink": "link" })</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;let objectDir = [\&quot;opts\&quot;, \&quot;theme_opts\&quot;, \&quot;codepen\&quot;]\nccc.replaceJSON(\&quot;./data/appendToMe.json\&quot;, objectDir, { \&quot;sexylink\&quot;: \&quot;link\&quot; })&quot;, "js_external": "https://cdn.jsdelivr.net/npm/clear_concise_creative/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="writeFile">
+        <a href="#writeFile">#</a>
+        <span class="type-signature"></span>writeFile<span class="signature">(type, "string")</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <ol>
+<li>Will format the type of data you have and then write to the file accordingly</li>
+</ol>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>"string"</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>let writeThis = ccc.writeFile("./data/writeToMe.txt", [1, 2, 3])
+let writeObject = ccc.writeFile("./data/writeToMe.txt", { id: 1, name: "lesley" })</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;let writeThis = ccc.writeFile(\&quot;./data/writeToMe.txt\&quot;, [1, 2, 3])\nlet writeObject = ccc.writeFile(\&quot;./data/writeToMe.txt\&quot;, { id: 1, name: \&quot;lesley\&quot; })&quot;, "js_external": "https://cdn.jsdelivr.net/npm/clear_concise_creative/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="writeJSON">
+        <a href="#writeJSON">#</a>
+        <span class="type-signature"></span>writeJSON<span class="signature">(filePath, object)</span><span class="type-signature"></span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>ccc.writeJSON('./db.json', array)
+ccc.writeJSON('./db.json', object)</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>filePath</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>object</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    </div>
+
+    <footer class="footer" id="footer">
+      
+    </footer>
+
+    <script src="scripts/third-party/prettify.js"></script>
+    <script src="scripts/third-party/lang-css.js"></script>
+    <script type="text/javascript" src="scripts/misc.js"></script>
+
+    <script>prettyPrint();</script>
+    <script src="scripts/linenumber.js"></script>
+    <script src="scripts/fix-code-block.js"></script>
+    <script src="scripts/fix-navbar.js"></script>
+    
+      <script src="scripts/search.js"></script>
+      <script src="scripts/third-party/fuse.js"></script>
+      <script>
+        var list = [{"title":"addToNestedJSON","link":"<a href=\"global.html#addToNestedJSON\">addToNestedJSON</a>"},{"title":"appendFile","link":"<a href=\"global.html#appendFile\">appendFile</a>"},{"title":"appendToJSON","link":"<a href=\"global.html#appendToJSON\">appendToJSON</a>"},{"title":"copy","link":"<a href=\"global.html#copy\">copy</a>"},{"title":"deletePath","link":"<a href=\"global.html#deletePath\">deletePath</a>"},{"title":"getDirNames","link":"<a href=\"global.html#getDirNames\">getDirNames</a>"},{"title":"getJSONObject","link":"<a href=\"global.html#getJSONObject\">getJSONObject</a>"},{"title":"mergeJSONObject","link":"<a href=\"global.html#mergeJSONObject\">mergeJSONObject</a>"},{"title":"readJSON","link":"<a href=\"global.html#readJSON\">readJSON</a>"},{"title":"replaceJSON","link":"<a href=\"global.html#replaceJSON\">replaceJSON</a>"},{"title":"writeFile","link":"<a href=\"global.html#writeFile\">writeFile</a>"},{"title":"writeJSON","link":"<a href=\"global.html#writeJSON\">writeJSON</a>"}];
+        var options = 
+          setupSearch(list, options)
+      </script>
+    
+
+    
+
+    
+
+    
+
+
+  </body>
+
+</html>

@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding favicon -->
+    
+    <link rel="icon" href="https://dl.dropbox.com/s/unb7kozlrbox72t/favicon.ico" />
+    
+
+    <!-- Adding meta -->
+    
+    
+    <meta name="author" content="Lesley Cheung" />
+    
+    
+
+    <!-- Adding external script-->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" ></script>
+    
+    
+
+    <!-- Adding external style-->
+    
+    
+    <link href="https://dl.dropbox.com/s/tljrmo925z4jgdi/professional.css" />
+    
+    
+
+    <!-- Adding scripts-->
+    
+
+    <!-- Adding style-->
+    
+
+    <!-- Adding overlay script-->
+    
+
+    <!-- Adding overlay style-->
+    
+
+
+    <title>
+      Global
+    </title>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/third-party/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/third-party/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-base.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-dark.css">
+    
+    <svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    style="display:none">
+    <defs>
+        <symbol id="copy-icon" viewbox="0 0 488.3 488.3">
+            <g>
+                <path
+                    d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z" />
+                <path
+                    d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z" />
+            </g>
+        </symbol>
+        <symbol id='search-icon' viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path
+                        d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="down-icon" viewBox="0 0 16 16">
+            <path 
+                fill-rule="evenodd" 
+                clip-rule="evenodd" 
+                d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"
+            >
+            </path>
+        </symbol>
+    </defs>
+</svg>
+  </head>
+
+  <body>
+
+    <nav class="navbar" id="navbar">
+      <h2><a href="index.html"><br/><a href='https://github.com/zen-out' target='_blank' style='margin: 1rem;'>zen-out</a><br/></a></h2><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="6621337" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#clean">clean</a></li><li class="accordion-list" id=""><a href="global.html#format">format</a></li><li class="accordion-list" id=""><a href="global.html#formatArray">formatArray</a></li><li class="accordion-list" id=""><a href="global.html#formatBoolean">formatBoolean</a></li><li class="accordion-list" id=""><a href="global.html#formatDate">formatDate</a></li><li class="accordion-list" id=""><a href="global.html#formatNumber">formatNumber</a></li><li class="accordion-list" id=""><a href="global.html#formatObject">formatObject</a></li><li class="accordion-list" id=""><a href="global.html#formatString">formatString</a></li><li class="accordion-list" id=""><a href="global.html#getType">getType</a></li><li class="accordion-list" id=""><a href="global.html#trimArr">trimArr</a></li><li class="accordion-list" id=""><a href="global.html#trimObj">trimObj</a></li></ul> </div><ul><li class="menu-li"><a href='https://github.com/zen-out/zen-out.github.io/blob/master/packages/videos/make_legit.png' class=' menu-link' id='' target='_blank'>visual instructions</a></li><li class="menu-li"><a href='https://www.npmjs.com/package/make_legit' class=' menu-link' id='' target='_blank'>see npm package</a></li></ul>
+      
+
+    </nav>
+    <div class="navbar-ham" id="navbar-ham">
+      <div>
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+      </div>
+    </div>
+
+    <div id="main" class="main-content">
+      
+      <h1 id='page-title' class="page-title">
+        Global
+      </h1>
+      
+
+      
+
+
+
+
+<section>
+
+
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+
+
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="clean">
+        <a href="#clean">#</a>
+        <span class="type-signature"></span>clean<span class="signature">(data)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>clean(data)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;clean(data)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/make_legit/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="format">
+        <a href="#format">#</a>
+        <span class="type-signature"></span>format<span class="signature">(data, date,)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>format(data, type)</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>date,</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>string, array, object, boolean or number</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="formatArray">
+        <a href="#formatArray">#</a>
+        <span class="type-signature"></span>formatArray<span class="signature">(data)</span><span class="type-signature"> &rarr; {array}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">array</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>formatArray(data)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;formatArray(data)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/make_legit/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="formatBoolean">
+        <a href="#formatBoolean">#</a>
+        <span class="type-signature"></span>formatBoolean<span class="signature">(data)</span><span class="type-signature"> &rarr; {boolean}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>formatBoolean(data)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;formatBoolean(data)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/make_legit/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="formatDate">
+        <a href="#formatDate">#</a>
+        <span class="type-signature"></span>formatDate<span class="signature">(data)</span><span class="type-signature"> &rarr; {date}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">date</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>formatDate(data)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;formatDate(data)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/make_legit/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="formatNumber">
+        <a href="#formatNumber">#</a>
+        <span class="type-signature"></span>formatNumber<span class="signature">(data, type)</span><span class="type-signature"> &rarr; {number}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>formatNumber(data)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;formatNumber(data)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/make_legit/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="formatObject">
+        <a href="#formatObject">#</a>
+        <span class="type-signature"></span>formatObject<span class="signature">(data)</span><span class="type-signature"> &rarr; {object}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>formatObject(data)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;formatObject(data)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/make_legit/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="formatString">
+        <a href="#formatString">#</a>
+        <span class="type-signature"></span>formatString<span class="signature">(data)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>formatString(data)</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getType">
+        <a href="#getType">#</a>
+        <span class="type-signature"></span>getType<span class="signature">(data)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>data, number, array, string object, boolean undefined</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>getType(data)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;getType(data)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/make_legit/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="trimArr">
+        <a href="#trimArr">#</a>
+        <span class="type-signature"></span>trimArr<span class="signature">(arr)</span><span class="type-signature"> &rarr; {array}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">array</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>trimArr(arr)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;trimArr(arr)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/make_legit/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="trimObj">
+        <a href="#trimObj">#</a>
+        <span class="type-signature"></span>trimObj<span class="signature">(obj)</span><span class="type-signature"> &rarr; {any}</span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>obj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>zen-out</li>
+                </ul>
+            </dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+            
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <div class="rel">
+    <pre class="prettyprint"><code>trimObj(obj)</code></pre>
+    
+    
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="codepen-form">
+            <input type="hidden" name="data" value='{"title": "Example", "js": &quot;trimObj(obj)&quot;, "js_external": "https://cdn.jsdelivr.net/npm/make_legit/dist/index.js" }' />
+            <input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" value="Create New Pen with Prefilled Data" width="40" height="40" />
+        </form>
+    
+    </div>
+
+    </div>
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    </div>
+
+    <footer class="footer" id="footer">
+      
+    </footer>
+
+    <script src="scripts/third-party/prettify.js"></script>
+    <script src="scripts/third-party/lang-css.js"></script>
+    <script type="text/javascript" src="scripts/misc.js"></script>
+
+    <script>prettyPrint();</script>
+    <script src="scripts/linenumber.js"></script>
+    <script src="scripts/fix-code-block.js"></script>
+    <script src="scripts/fix-navbar.js"></script>
+    
+      <script src="scripts/search.js"></script>
+      <script src="scripts/third-party/fuse.js"></script>
+      <script>
+        var list = [{"title":"clean","link":"<a href=\"global.html#clean\">clean</a>"},{"title":"format","link":"<a href=\"global.html#format\">format</a>"},{"title":"formatArray","link":"<a href=\"global.html#formatArray\">formatArray</a>"},{"title":"formatBoolean","link":"<a href=\"global.html#formatBoolean\">formatBoolean</a>"},{"title":"formatDate","link":"<a href=\"global.html#formatDate\">formatDate</a>"},{"title":"formatNumber","link":"<a href=\"global.html#formatNumber\">formatNumber</a>"},{"title":"formatObject","link":"<a href=\"global.html#formatObject\">formatObject</a>"},{"title":"formatString","link":"<a href=\"global.html#formatString\">formatString</a>"},{"title":"getType","link":"<a href=\"global.html#getType\">getType</a>"},{"title":"trimArr","link":"<a href=\"global.html#trimArr\">trimArr</a>"},{"title":"trimObj","link":"<a href=\"global.html#trimObj\">trimObj</a>"}];
+        var options = 
+          setupSearch(list, options)
+      </script>
+    
+
+    
+
+    
+
+    
+
+
+  </body>
+
+</html>

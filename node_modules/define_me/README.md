@@ -1,6 +1,6 @@
 # define_me
 [define_me - start here](https://zen-out.github.io/packages/define_me)
-
+[![here](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/define_me.png)](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/define_me.png)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![NPM Downloads](https://img.shields.io/npm/dw/define_me)
 ## Instructions: 
@@ -9,7 +9,7 @@
 
 ## If utilizing in html...: 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/define_me@1.1.0/dist/index.js"></script> 
+<script src="./node_modules/define_me/index.js"></script> 
   <script>
         $(() => {
 

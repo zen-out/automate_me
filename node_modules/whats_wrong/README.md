@@ -1,6 +1,7 @@
 # whats_wrong
 [whats_wrong - start here](https://zen-out.github.io/packages/whats_wrong)
 
+[![here](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/whats_wrong.png)](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/whats_wrong.png)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![NPM Downloads](https://img.shields.io/npm/dw/whats_wrong)
 ## Instructions: 
@@ -8,8 +9,17 @@
  ``` const whats_wrong =  require('whats_wrong')```
 
 ## If utilizing in html...: 
-```  <script src="https://cdn.jsdelivr.net/npm/whats_wrong@1.1.0/dist/index.js"></script> ``` 
- ``` const output =  whats_wrong.upset("error", "location", "expected")```
+```html
+    <script src="./node_modules/make_legit/index.js"></script>
+    <script src="./node_modules/whats_wrong/index.js">
+    </script>
+    <script>
+        $(() => {
+            let output = whats_wrong.upset("hello", "nothing", "expected")
+            console.log("🚀 ~ file: index.html ~ line 32 ~ output", output)
+        })
+    </script>
+    ```
 
 <a name="upset"></a>
 
