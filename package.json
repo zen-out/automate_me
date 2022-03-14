@@ -15,7 +15,7 @@
     "license": "MIT",
     "dependencies": {
         "child_process": "^1.0.2",
-        "clear_concise_creative": "^1.1.3"
+        "clear_concise_creative": "^1.1.4"
     },
     "homepage": "https://zen-out.github.io/packages/automate_me",
     "repository": "https://github.com/zen-out/automate_me"
