@@ -41,7 +41,7 @@ function runCommand(command) {
  * @returns {any}
  */
 function createFile(fileName) {
-    let getTemplate = fs.readFileSync("./create.sh")
+    let getTemplate = fs.readFileSync("./node_modules/automate_me/create.sh")
     let writeTemplate = fs.writeFileSync(`./${fileName}.sh`, getTemplate)
     exec(`chmod u+x ${fileName}.sh`, (error, stdout, stderr) => {
         if (error) {
