@@ -1,7 +1,0 @@
-{
-  "files.exclude": {
-    "node_modules": true
-  },
-  "workspace.isHidden": false,
-  "liveServer.settings.port": 5503
-}
