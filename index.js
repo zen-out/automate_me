@@ -1,6 +1,5 @@
 const { exec } = require("child_process")
-const ccc = require("clear_concise_creative")
-
+const fs = require("fs-extra")
 
 
 /**
@@ -42,8 +41,8 @@ function runCommand(command) {
  * @returns {any}
  */
 function createFile(fileName) {
-    let getTemplate = ccc.readFile("./create.sh")
-    let writeTemplate = ccc.writeFile(`./${fileName}.sh`, getTemplate)
+    let getTemplate = fs.readFileSync("./create.sh")
+    let writeTemplate = fs.writeFileSync(`./${fileName}.sh`, getTemplate)
     exec(`chmod u+x ${fileName}.sh`, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
@@ -56,6 +55,7 @@ function createFile(fileName) {
     });
 }
 
-
-createFile("teacher")
-module.exports = { createFile, runFile, runCommand }
+function list() {
+    console.log("runFile, runCommand, createFile")
+}
+module.exports = { createFile, runFile, runCommand, list }

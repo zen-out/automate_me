@@ -1,1 +1,25 @@
-{"name":"automate_me","version":"1.0.11","description":"create bash scripts and run them","main":"index.js","scripts":{"play":"node playground.js","deploy":"npm version patch && npm publish","push":"git add . && git commit -m 'updated' && git push","update":"ncu --upgrade"},"keywords":["bash","automate"],"author":"zen-out (Lesley Cheung)","license":"MIT","dependencies":{},"homepage":"https://zen-out.github.io/packages.html","devDependencies":{}}
+{
+    "name": "automate_me",
+    "version": "1.0.11",
+    "description": "create bash scripts and run them",
+    "main": "index.js",
+    "scripts": {
+        "play": "node playground.js",
+        "deploy": "npm version patch && npm publish",
+        "push": "git add . && git commit -m 'updated' && git push",
+        "update": "ncu --upgrade"
+    },
+    "keywords": [
+        "bash",
+        "automate"
+    ],
+    "author": "zen-out (Lesley Cheung)",
+    "license": "MIT",
+    "dependencies": {
+        "child_process": "^1.0.2",
+        "clear_concise_creative": "1.1.0",
+        "copyfiles": "^2.4.1",
+        "fs-extra": "^10.0.1"
+    },
+    "homepage": "https://zen-out.github.io/packages.html"
+}
