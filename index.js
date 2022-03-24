@@ -1,6 +1,8 @@
 const { exec } = require("child_process")
 const ccc = require("clear_concise_creative")
 
+
+
 /**
  * @description 
  * Will run .sh file 
@@ -40,7 +42,8 @@ function runCommand(command) {
  * @returns {any}
  */
 function createFile(fileName) {
-    ccc.writeFile(`./${fileName}.sh`, "#!/bin/bash \necho 'hello'")
+    let getTemplate = ccc.readFile("./create.sh")
+    let writeTemplate = ccc.writeFile(`./${fileName}.sh`, getTemplate)
     exec(`chmod u+x ${fileName}.sh`, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
@@ -53,4 +56,6 @@ function createFile(fileName) {
     });
 }
 
+
+createFile("teacher")
 module.exports = { createFile, runFile, runCommand }
