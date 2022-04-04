@@ -1,8 +1,8 @@
 cd 
 cd desktop
 psql postgres
-DROP DATABASE optee_test; 
-CREATE DATABASE optee_test; 
+DROP DATABASE optee3; 
+CREATE DATABASE optee3; 
 \q
 cd desktop
 cd sample
